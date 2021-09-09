@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     let user!:any;
     this.shared.getAllUsers().subscribe(data =>{
       user = data;
+      console.log(user)
       for (const iterator of user) {
         this.users = iterator;
         if(this.users.name == usuario && this.users.name == password){

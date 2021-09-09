@@ -16,9 +16,11 @@ import { CoreModule } from '../core/core.module';
     CommonModule,
     FeatureRoutingModule,
     ReactiveFormsModule,
-  ], exports: [
+  ]
+  /*, exports: [
     LoginComponent
-  ],
+  ]*/
+  ,
 providers: [
   SharedService
 ]
